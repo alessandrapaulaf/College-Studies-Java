@@ -1,0 +1,15 @@
+import java.io.IOException;
+import java.util.Scanner;
+import java.lang.Math;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner ler = new Scanner(System.in);
+  Double [] N = new Double[100];
+  Double X = ler.nextDouble();
+  for (int i=0;i<100;i++){
+   N [i] = X/(Math.pow(2, i));
+   System.out.printf("N["+ i + "] = %.4f\n",N[i]);
+  }
+ }
+}
