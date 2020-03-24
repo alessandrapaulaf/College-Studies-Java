@@ -1,0 +1,36 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner ler  = new Scanner(System.in);
+		String nome;
+		int num=0;
+		double saq=0,totalsaq=0,bloq=0,totalbloqueio=0,ata=0,totalata=0,valor;
+		
+		num = ler.nextInt();
+		
+		for (int i = 0;i<num;i++){
+			nome = ler.next();
+			valor = ler.nextDouble();
+			saq += valor;
+			valor = ler.nextDouble();
+			bloq += valor;
+			valor = ler.nextDouble();
+			ata += valor;
+			valor = ler.nextDouble();
+			totalsaq += valor;
+			valor = ler.nextDouble();
+			totalbloqueio += valor;
+			valor = ler.nextDouble();
+			totalata += valor;		
+			
+		}
+			
+		System.out.printf("Pontos de Saque: %.2f %%.\n",(totalsaq/saq * 100));
+		System.out.printf("Pontos de Bloqueio: %.2f %%.\n",(totalbloqueio/bloq * 100));
+		System.out.printf("Pontos de Ataque: %.2f %%.\n",(totalata/ata * 100));
+		
+	}
+
+}
