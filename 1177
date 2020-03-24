@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main
+{
+public static void main(String[] args) {
+	int T, x,y;
+	int N[] =new int[1000];
+	Scanner ler =new Scanner(System.in);
+	T =ler.nextInt();
+	for ( x = 0,y = 0; x < 1000; y++,x++) {
+		N[y] = y;
+		if ((N[y]) == T) {
+			y = 0;
+		}
+	System.out.print("N["+x+"] = "+N[y]+"\n");
+		}
+	}
+}
