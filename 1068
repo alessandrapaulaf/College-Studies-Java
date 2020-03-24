@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 class Main{
     static boolean checkParen(String str){
         int len = str.length(), cont = 0;
